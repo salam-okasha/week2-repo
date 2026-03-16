@@ -1,0 +1,53 @@
+body{
+    font-family: arial;
+    background-color: bisque;
+    margin: 0%;
+}
+.container{
+    width: 900px;
+    margin:auto;
+    background-color:aliceblue ;
+      display: grid;
+     gap: 50px;
+}
+header{
+    text-align: center;
+    background-color: bisque;
+}
+header h1{
+    color: coral;
+
+}
+header h2{
+    color:darksalmon;
+    font-family: serif;
+
+
+}
+section{
+    border: 1px solid ;
+    margin: bottom 15px;  
+}
+.photo {
+    width:100%;
+    border: 5px;
+    margin-left: 20px;
+  
+}
+.contact{
+    background: blanchedalmond;
+    padding:15px;
+    margin: top 10px;
+}
+.content{
+    display: inline;
+    margin-top: 20px;
+}
+.left{
+    width:30% ;
+}
+.right{
+    border:  1px solid ;
+    justify-content: space-between;
+    margin-bottom:  15px;
+}
