@@ -1,4 +1,4 @@
-body{
+/*body{
     font-family: arial;
     background-color: bisque;
     margin: 0%;
@@ -50,4 +50,67 @@ section{
     border:  1px solid ;
     justify-content: space-between;
     margin-bottom:  15px;
+}*/
+body {
+  font-family: Arial, sans-serif;
+  background-color: bisque;
+  margin: 0;
+}
+
+.container {
+  width: 900px;
+  margin: auto;
+  background-color: aliceblue;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 20px;
+  padding: 20px;
+}
+
+header {
+  grid-column: span 2;
+  text-align: center;
+  background-color: bisque;
+  padding: 10px;
+}
+
+header h1 {
+  color: coral;
+  margin: 0;
+}
+
+header h2 {
+  color: darksalmon;
+  font-family: serif;
+  margin: 0;
+}
+
+.photo {
+
+  width: 100%;
+  border: 3px solid #333;   
+  border-radius: 10px;      
+  margin-bottom: 15px;
+
+}
+
+.contact {
+  background: blanchedalmond;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.right section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+.container div {
+  background-color: white;
+  padding: 10px;
+}
+.container div.header {
+  grid-area: header;
+  text-align: center;
 }
