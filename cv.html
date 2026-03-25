@@ -1,18 +1,51 @@
 <html>
+  <script>
+  
+    function toggleMode(){
+   var elemants=document.querySelectorAll("*");
+
+   elemants.forEach(function(el){
+   if(el.classList.contains("dark"))
+   {el.classList.remove("dark");
+   }
+   else {
+    el.classList.add("dark");
+   }
+  
+  }) ;
+   
+  }  
+     
+    
+    
+  </script>
+  
     <head>
         <title> My CV</title>
-        <link  rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
-  <body>
-  <main>
-  <div class="container">
+  <body  ><button  onclick="toggleMode()" id="demo">dark mode</button>
+
     <header>
-      <h1>My Personal Website</h1>
-   
+      <h1>My Personal Website</h1> 
+     
+        <div class="links">
+          <select onchange="window.location.href =this.value;">
+           
+         <option value="#">LinkedIn</option> | <option value="#">GitHub</option>
+         </select>
+         <a href="#">LinkedIn</a> | <a href="#">GitHub</a>
+        </div>
+
+      
     </header>
 
-    <div class="left">
+
+  <main >
+  <div class="container">
+  
+   <div class="left">
       <img src="profile.jpg" alt="Profile Photo" class="photo">
       <div class="contact">
         <p>Name: Salam</p>
@@ -46,14 +79,16 @@
         <h2>Skills</h2>
         <p>python html css javascript</p>
       </section>
-      </main>
-      <footer>
+    </div>
+  </div>
+  </main>
+ 
+  <footer>
       <section>
         <h2>Social Links</h2>
         <p><a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
       </section>
-        </footer>
-    </div>
+  </footer>
   
   </body>
 </html>
